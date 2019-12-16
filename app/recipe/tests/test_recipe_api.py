@@ -77,8 +77,6 @@ class PrivateRecipeApiTests(TestCase):
         self.assertEqual(res.status_code, status.HTTP_200_OK)
         self.assertEqual(len(res.data), 1)
         self.assertEqual(res.data, serializer.data)
-
-    
     # def test_create_ingredient_successful(self):
     #    """Test Creating a new ingredient"""
     #    payload = {'name': 'Test Ingredient'}
@@ -97,4 +95,3 @@ class PrivateRecipeApiTests(TestCase):
     #    res = self.client.post(INGREDIENT_URL, payload)
 
     #   self.assertEqual(res.status_code, status.HTTP_400_BAD_REQUEST)
-    
